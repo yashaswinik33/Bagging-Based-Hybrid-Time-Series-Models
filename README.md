@@ -4,7 +4,7 @@
 
 ---
 
-## 📌 Description  
+##  Description  
 
 This project implements and compares different time series forecasting approaches for **12 Indian economic indicators**:  
 
@@ -18,7 +18,7 @@ The project outputs:
 
 ---
 
-## 🎯 Aim & Objectives  
+##  Aim & Objectives  
 
 **Aim:**  
 To develop a **bagging-based hybrid time series model** to forecast Indian economic indicators with better forecasting capacity than the existing hybrid model.  
@@ -31,7 +31,7 @@ To develop a **bagging-based hybrid time series model** to forecast Indian econo
 
 ---
 
-## 📊 Dataset  
+## Dataset  
 
 The dataset consists of **12 economic indicators** (monthly, various periods 2006–2022):  
 
@@ -50,7 +50,7 @@ The dataset consists of **12 economic indicators** (monthly, various periods 200
 
 ---
 
-## 📂 Data Sources  
+## Data Sources  
 
 - **Clearing Corporation Of India Limited (CCIL)**  
   - Provides financial instrument indices, treasury bills, government securities, etc.  
@@ -64,7 +64,7 @@ The dataset consists of **12 economic indicators** (monthly, various periods 200
 
 ---
 
-## ⚙️ Requirements  
+## Requirements  
 
 This project is implemented in **R**. Required packages:  
 
