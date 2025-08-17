@@ -47,7 +47,7 @@ To develop a **bagging-based hybrid time series model** to forecast Indian econo
 
 ---
 
-## 📊 Dataset  
+##  Dataset  
 
 The dataset consists of **12 economic indicators** (monthly, various periods 2006–2022):  
 
