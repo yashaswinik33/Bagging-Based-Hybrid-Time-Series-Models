@@ -6,19 +6,35 @@
 
 ##  Description  
 
-This project implements and compares different time series forecasting approaches for **12 Indian economic indicators**:  
+This project implements and compares different time series forecasting approaches for **12 Indian economic indicators**.  
 
-1. **Base Models** – individual forecasting models (SARIMA, ETS, STL+SARIMA, STL+ETS, NNAR, MLP).  
-2. **Hybrid Models** – parallel hybrid forecasting with various weighting methods (Simple Mean, Trimmed Mean, Weighted Mean, SWAM, OLS-based, and Variance-Covariance weighting).  
-3. **Bagged Models** – bootstrap aggregation applied to base models to reduce variance and improve forecast stability.  
+### Models considered:  
 
-The project outputs:  
+1. **Base Models** – individual forecasting models:  
+   - SARIMA  
+   - ETS  
+   - STL + SARIMA  
+   - STL + ETS  
+   - NNAR  
+   - MLP  
+
+2. **Hybrid Models** – parallel hybrid forecasting using different weighting methods:  
+   - Simple Average (SA) → **H-SM**  
+   - Trimmed Mean (TM) → **H-TM**  
+   - Weighted Mean (WM) → **H-WM**  
+   - Simple Weighted Average Method (SWAM) → **H-SWAM**  
+   - Ordinary Least Squares for Minimum Error → **H-OLSME**  
+   - Variance-Covariance Method → **H-VarCov**  
+
+3. **Bagged Models** – bootstrap aggregation (bagging) applied to base models to reduce variance and improve forecast stability.  
+
+### Outputs generated:  
 - **Forecast predictions**  
 - **Evaluation metrics**: RMSE and MAE  
 
 ---
 
-##  Aim & Objectives  
+## Aim & Objectives  
 
 **Aim:**  
 To develop a **bagging-based hybrid time series model** to forecast Indian economic indicators with better forecasting capacity than the existing hybrid model.  
@@ -31,7 +47,7 @@ To develop a **bagging-based hybrid time series model** to forecast Indian econo
 
 ---
 
-## Dataset  
+## 📊 Dataset  
 
 The dataset consists of **12 economic indicators** (monthly, various periods 2006–2022):  
 
@@ -50,7 +66,7 @@ The dataset consists of **12 economic indicators** (monthly, various periods 200
 
 ---
 
-## Data Sources  
+##  Data Sources  
 
 - **Clearing Corporation Of India Limited (CCIL)**  
   - Provides financial instrument indices, treasury bills, government securities, etc.  
@@ -70,4 +86,3 @@ This project is implemented in **R**. Required packages:
 
 ```r
 install.packages(c("tidyverse", "ggplot2", "readxl", "forecast", "nnfor", "neuralnet"))
-
